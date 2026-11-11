@@ -1,0 +1,59 @@
+//
+//  MovingGears.swift
+//  AkVox
+//
+//  Created by Stuart Walsh on 23/04/2025.
+//
+
+import SwiftUI
+
+struct MovingGears: View {
+    
+    @State var degreesRotatingForward = 0.0
+    @State var degreesRotatingBackward = 0.0
+    
+    @State var gearColour: Color
+    
+    var body: some View {
+        ZStack {
+            Image(systemName: "gear")
+                .font(.system(size: 50, weight: .semibold, design: .default))
+                .rotationEffect(Angle(degrees: degreesRotatingForward + 15))
+                .onAppear {
+                    withAnimation(.linear(duration: 0.5)
+                        .speed(1.0).repeatForever(autoreverses: false)) {
+                            degreesRotatingForward = -120.0
+                        }
+                }
+
+            Image(systemName: "gear")
+                .font(.system(size: 50, weight: .semibold, design: .default))
+                .rotationEffect(Angle(degrees: degreesRotatingBackward + 60))
+                .offset(x: -40, y: -35)
+                .onAppear {
+                    withAnimation(.linear(duration: 0.5)
+                        .speed(1.0).repeatForever(autoreverses: false)) {
+                            degreesRotatingBackward = 120.0
+                        }
+                }
+
+            Image(systemName: "gear")
+                .font(.system(size: 50, weight: .semibold, design: .default))
+                .rotationEffect(Angle(degrees: degreesRotatingBackward + 5))
+                .offset(x: 40, y: -35)
+                .onAppear {
+                    withAnimation(.linear(duration: 0.5)
+                        .speed(1.0).repeatForever(autoreverses: false)) {
+                            degreesRotatingBackward = 120.0
+                        }
+                }
+        }
+        .foregroundStyle(gearColour)
+        .shadow(radius: 2, x: 2, y: 2)
+    }
+}
+
+#Preview {
+    MovingGears(gearColour: .blue)
+        .frame(width: 100, height: 100)
+}
