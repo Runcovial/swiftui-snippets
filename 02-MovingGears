@@ -1,8 +1,15 @@
 //
 //  MovingGears.swift
-//  AkVox
+//  A more interesting progress view than the  standard one supplied with SwiftUI.
+//  To adjust the size when using this in your views, adjust the .scaleEffect() modifier:
 //
-//  Created by Stuart Walsh on 23/04/2025.
+//    VStack {
+//        MovingGears(gearColour: .indigo)
+//            .scaleEffect(0.75)
+//        Text("Loading Transactions...")
+//    }
+//
+//  Created by Stuart Walsh on 23/04/2025. As used in AkVox and his other apps.
 //
 
 import SwiftUI
