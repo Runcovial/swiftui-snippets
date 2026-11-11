@@ -1,6 +1,6 @@
-# iOS & SwiftUI UI Snippets
+# macOS iOS & SwiftUI functional and UI Snippets
 
-A curated collection of production-ready custom views, animations, shaders, and micro-interactions featured on my Instagram **[@runcovial](https://instagram.com)**.
+A curated collection of production-ready coding templates, custom views, animations and micro-interactions featured on my Instagram **[@runcovial](https://instagram.com)**.
 
 Each folder is self-contained and includes a working SwiftUI `#Preview` so you can drop the file straight into Xcode and run it immediately.
 
@@ -19,7 +19,7 @@ Each folder is self-contained and includes a working SwiftUI `#Preview` so you c
 
 | # | Snippet | Framework | Key Concepts | Source |
 | :--- | :--- | :--- | :--- | :--- |
-| **01** | **Custom Shimmer Modifier** | SwiftUI | `ViewModifier`, `LinearGradient`, Phase Animation | [View Code](./01-CustomShimmer) |
+| **01** | **objectDescriptionExample** | SwiftUI | `CustomStringConvertible`, `Log`, Better display of objects in log | [View Code](./01-CustomShimmer) |
 | **02** | **Interactive Mesh Gradient** | SwiftUI / Metal | `MeshGradient`, `DragGesture`, Custom Shaders | [View Code](./02-InteractiveMesh) |
 | **03** | **Elastic Pull-to-Refresh** | UIKit / SwiftUI | `UIScrollViewDelegate`, Haptics, Custom Layout | [View Code](./03-ElasticRefresh) |
 
