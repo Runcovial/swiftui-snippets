@@ -8,9 +8,10 @@ Each folder is self-contained and includes a working SwiftUI `#Preview` so you c
 
 ## Requirements
 
-- **iOS:** 17.0+ (unless noted otherwise in the snippet folder)
-- **Xcode:** 16.0+
-- **Swift:** 6.0
+- **iOS:**
+- **macOS**
+- **Xcode:** 
+- **Swift:** 5.0
 
 ---
 
