@@ -1,0 +1,46 @@
+//
+//  ObjectDescriptionExample
+//
+//  Always set your structs, classes and complex enums to CustomStringConvertible to get a nice formated 
+//  print of your object's values in the log when debugging.
+//
+//  Created by Stuart Walsh on 29/04/2026.
+//
+
+import Foundation
+
+struct AppInfo: Sendable, Identifiable, CustomStringConvertible {
+    
+    let id: UUID
+    let appID: String
+    let appInfoID: String
+    let appStoreState: String
+    let state: String
+    
+    init(
+        appID: String,
+        appInfoID: String,
+        appStoreState: String,
+        state: String) {
+
+        self.id = UUID()
+        self.appID = appID
+        self.appInfoID = appInfoID
+        self.appStoreState = appStoreState
+        self.state = state
+    }
+    
+    var description: String {
+        let string =
+"""
+\n
+               id: \(id)
+            appID: \(appID)
+        appInfoID: \(appInfoID)
+    appStoreState: \(appStoreState)
+            state: \(state)
+
+"""
+        return string
+    }
+}
