@@ -20,8 +20,7 @@ Each folder is self-contained and includes a working SwiftUI `#Preview` so you c
 | # | Snippet | Framework | Key Concepts | Source |
 | :--- | :--- | :--- | :--- | :--- |
 | **01** | **objectDescriptionExample** | SwiftUI | `CustomStringConvertible`, `Log`, Better display of objects in log | [View Code](./01-ObjectDescriptionExample) |
-| **02** | **movingGears** | SwiftUI / Metal | `MeshGradient`, `DragGesture`, Custom Shaders | [View Code](./02-MovingGears) |
-| **03** | **Elastic Pull-to-Refresh** | UIKit / SwiftUI | `UIScrollViewDelegate`, Haptics, Custom Layout | [View Code](./03-ElasticRefresh) |
+| **02** | **movingGears** | SwiftUI / Metal | `ProgressView`, `User Pacifier`, `MoveingGears` A more prominent and less dull progress view | [View Code](./02-MovingGears) |
 
 *(Add new rows above as you publish new posts)*
 
