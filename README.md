@@ -1,6 +1,6 @@
-# macOS iOS & SwiftUI functional and UI Snippets
+# macOS iOS SwiftUI functional and UI Snippets
 
-A curated collection of production-ready coding templates, custom views, animations and micro-interactions featured on my Instagram **[@runcovial](https://instagram.com)**.
+A collection of production-ready coding templates, custom views, animations and micro-interactions featured on my Instagram **[@runcovial](https://instagram.com)**.
 
 Each folder is self-contained and includes a working SwiftUI `#Preview` so you can drop the file straight into Xcode and run it immediately.
 
